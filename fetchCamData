@@ -1,3 +1,0 @@
-#!/bin/bash
-curl "https://api.airtable.com/v0/appC3HrtsUWOBFP1R/cameras?maxRecords=3&view=Grid%20view" \
-  -H "Authorization: Bearer keyvS7t6LbuQP6NZw" | tee data
