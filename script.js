@@ -16,9 +16,13 @@ $.get( "data", function(data) {
     newDiv.appendChild(location);
     
     //create img tag with src from mpegPort field
+    console.log(data.records[i].fields.mpegPort);
     let stream = document.createElement('img');
     stream.setAttribute('src', '10.0.0.43:' + data.records[i].fields.mpegPort)
-    document.body.appendChild(stream);
+    newDiv.appendChild(stream);
+    
+    //append the div to the body
+    document.body.appendChild(newDiv);
     
     //create 
   }
