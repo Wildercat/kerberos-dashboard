@@ -10,16 +10,23 @@ $.get( "data", function(data) {
     //set id to id from database
     newDiv.setAttribute('id', data.records[i].id);
     
-    //create header from Location field (from database)
+    //create header from Location field (from database), append to div
     let location = document.createElement('h2');
     location.innerHTML = data.records[i].fields.Location;
     newDiv.appendChild(location);
     
-    //create img tag with src from mpegPort field
+    //create link with href from kerberosURL field]
+    let link = document.createElement('a');
+    link.setAttribute('href', 'http://' + data.records[i].fields.kerberosURL);
+    
+    //create img tag with src from mpegPort field, append to link
     console.log(data.records[i].fields.mpegPort);
     let stream = document.createElement('img');
     stream.setAttribute('src', 'http://10.0.0.43:' + data.records[i].fields.mpegPort)
-    newDiv.appendChild(stream);
+    link.appendChild(stream);
+    
+    //append link to div
+    newDiv.appendChild(link);
     
     //append the div to the body
     document.body.appendChild(newDiv);
