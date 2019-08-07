@@ -23,6 +23,7 @@ $.get( "data", function(data) {
     console.log(data.records[i].fields.mpegPort);
     let stream = document.createElement('img');
     stream.setAttribute('src', 'http://10.0.0.43:' + data.records[i].fields.mpegPort)
+    stream.setAttribute('alt', 'Click for Kerberos page');
     link.appendChild(stream);
     
     //append link to div
