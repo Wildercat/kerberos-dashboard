@@ -18,7 +18,7 @@ $.get( "data", function(data) {
     //create img tag with src from mpegPort field
     console.log(data.records[i].fields.mpegPort);
     let stream = document.createElement('img');
-    stream.setAttribute('src', '10.0.0.43:' + data.records[i].fields.mpegPort)
+    stream.setAttribute('src', 'http://10.0.0.43:' + data.records[i].fields.mpegPort)
     newDiv.appendChild(stream);
     
     //append the div to the body
