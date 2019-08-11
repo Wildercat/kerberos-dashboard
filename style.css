@@ -1,23 +1,23 @@
 body {
-  background-color: fcfafa;
+  font-family: 'Merriweather', serif;
 }
 .header {
   margin: 0px;
   padding: 3px;
   text-align: center;
-  background: RoyalBlue;
-  color: White;
+  background-color: #fcfafa;
+  color: 4f81c7;
   font-size: 20px;
 }
 ul {
-  font-size: 20px;
+  font-size: 18px;
   float: left;
   text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 60px;
-  background-color: DarkSlateGrey;
+  background-color: 4f81c7;
 }
 li a {
   color: white;
@@ -25,9 +25,12 @@ li a {
   text-decoration: none;
 }
 .active {
-   border: 2px solid LightSkyBlue;
+  height: -2px;
+   border: 2px solid #64c4ed;
 }
 li a:hover {
-  background-color: LightSkyBlue;
+  background-color: #f0d78c;
+  border: 2px solid #f0d78c;
+  height: -2px;
   color: white;
 }
