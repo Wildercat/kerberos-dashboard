@@ -34,7 +34,4 @@ $.get( "data", function(data) {
     
     //create 
   }
-//  $( "body" )
-//    .append( "Name: " + data.name ) // John
-//    .append( "Time: " + data.time ); //  2pm
 }, "json" );
