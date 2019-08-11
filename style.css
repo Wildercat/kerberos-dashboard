@@ -37,6 +37,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+#camList div{
+  padding: 8px;
+}
 img {
   border-radius: 10px;
 }
