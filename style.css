@@ -8,6 +8,7 @@ body {
   background-color: #fcfafa;
   color: 4f81c7;
   font-size: 20px;
+  border-radius: 10px;
 }
 #menu {
   font-size: 18px;
@@ -31,4 +32,24 @@ body {
   background-color: #f0d78c;
   color: white;
 }
-.footer 
+img {
+  border-radius: 10px;
+}
+.footer {
+  border-radius: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f0d78c;
+  color: white;
+  text-align: right;
+}
+.footer ul {
+  margin-right: 18px;
+}
+.footer ul li {
+  font-size: 13px;
+  margin: 5px;
+  display: inline;
+}

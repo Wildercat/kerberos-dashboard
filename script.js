@@ -30,7 +30,7 @@ $.get( "data", function(data) {
     newDiv.appendChild(link);
     
     //append the div to the body
-    document.body.appendChild(newDiv);
+    document.getElementById('camList').appendChild(newDiv);
     
     //create 
   }
