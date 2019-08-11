@@ -1,3 +1,6 @@
+body {
+  background-color: fcfafa;
+}
 .header {
   margin: 0px;
   padding: 3px;
@@ -7,14 +10,24 @@
   font-size: 20px;
 }
 ul {
+  font-size: 20px;
+  float: left;
   text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 60px;
-  background-color: deepskyblue;
+  background-color: DarkSlateGrey;
 }
 li a {
+  color: white;
   display: block;
-  width: 60px;
+  text-decoration: none;
+}
+.active {
+   border: 2px solid LightSkyBlue;
+}
+li a:hover {
+  background-color: LightSkyBlue;
+  color: white;
 }
