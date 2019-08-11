@@ -9,7 +9,7 @@ body {
   color: 4f81c7;
   font-size: 20px;
 }
-ul {
+#menu {
   font-size: 18px;
   float: left;
   text-align: center;
@@ -19,18 +19,16 @@ ul {
   width: 60px;
   background-color: 4f81c7;
 }
-li a {
+#menu li a {
   color: white;
   display: block;
   text-decoration: none;
 }
 .active {
-  height: -2px;
-   border: 2px solid #64c4ed;
-}
-li a:hover {
   background-color: #f0d78c;
-  border: 2px solid #f0d78c;
-  height: -2px;
+}
+#menu li a:hover {
+  background-color: #f0d78c;
   color: white;
 }
+.footer 
