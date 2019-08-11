@@ -32,6 +32,11 @@ body {
   background-color: #f0d78c;
   color: white;
 }
+#camList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 img {
   border-radius: 10px;
 }
