@@ -44,6 +44,11 @@ body {
 img {
   border-radius: 10px;
 }
+.r270 {
+  transform: rotate(90deg);
+  width: 80%;
+  height: auto;
+}
 .mirrored {
   transform: scaleX(-1);
 }
