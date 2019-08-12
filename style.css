@@ -1,9 +1,6 @@
 body {
   font-family: 'Merriweather', serif;
 }
-.r270 {
-  transform: rotate(90deg);
-}
 .header {
   margin: 0px;
   padding: 3px;
