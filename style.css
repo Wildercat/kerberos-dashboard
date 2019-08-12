@@ -41,9 +41,13 @@ body {
 #camList div{
   padding: 8px;
 }
+/*
 .r270 {
   transform: rotate(90deg);
+  width: 75%;
+  height: auto;
 }
+*/
 img {
   border-radius: 10px;
   display: block;
