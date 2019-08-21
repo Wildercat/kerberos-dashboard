@@ -7,7 +7,7 @@ $.get( "data", function(data) {
   for (let i = 0; i < data.records.length; i++) {
     let newDiv = document.createElement('div');
     
-    //set id to id from database
+    //set id to id from database - might come in handy
     newDiv.setAttribute('id', data.records[i].id);
     
     //create header from Location field (from database), append to div
@@ -15,19 +15,22 @@ $.get( "data", function(data) {
     location.innerHTML = data.records[i].fields.Location;
     newDiv.appendChild(location);
     
-    //create link with href from kerberosURL field]
+    //create link with href from kerberosURL field
     let link = document.createElement('a');
     link.setAttribute('href', 'http://' + data.records[i].fields.kerberosURL);
     
-    //create img tag with src from mpegPort field, append to link
+    //create img tag with src from mpegPort field
     console.log(data.records[i].fields.mpegPort);
     let stream = document.createElement('img');
     stream.setAttribute('src', 'http://10.0.0.43:' + data.records[i].fields.mpegPort)
     stream.setAttribute('alt', 'Click for Kerberos page');
     stream.setAttribute('class', 'r' + data.records[i].fields.Rotation);
+    
+    // if mirrored attribute is true, set class to mirrored
     if (data.records[i].fields.mirrored) {
       stream.setAttribute('class', 'mirrored');
     }
+    // append img to link
     link.appendChild(stream);
     
     //append link to div
